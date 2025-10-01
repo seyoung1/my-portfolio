@@ -1,0 +1,315 @@
+/* 전체 기본 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 네비게이션 */
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffeb3b; /* 강조 색상(노란색)으로 변경 */
+    border-bottom: 2px solid #ffeb3b; /* 아래쪽에 노란색 밑줄 추가 */
+    padding-bottom: 0.2rem;
+}
+
+/* 히어로 섹션 */
+.hero {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+}
+.hero-text {
+  max-width: 600px; /* 텍스트 영역의 최대 너비 지정 */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero span {
+  color: #ffeb3b;
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+
+/* 버튼 */
+.btn {
+  display: inline-block;
+  /* 기본 스타일... */
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  /* (주의: 현재 CSS 파일에서 .btn의 기본색은 노란색입니다. 아래에서 덮어씁니다.) */
+}
+
+/* 🌟 추가: 파란색 버튼 스타일 */
+.btn.blue {
+  background: #ffeb3b; /* 원래 .btn에 정의된 노란색 */
+  color: #0d47a1;
+}
+
+/* 🌟 추가: 검은색 버튼 스타일 */
+.btn.black {
+  background: #333;
+  color: white;
+  margin-left: 1rem; /* 두 버튼 사이 간격 추가 */
+}
+
+.btn.black:hover {
+  background: #000;
+}
+
+.btn:hover {
+  background: #fdd835;
+}
+
+/* 공통 섹션 */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+}
+
+/* 기술 */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background: #e3f2fd;
+  color: #0d47a1;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* 프로젝트 */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+/* 연락처 */
+.contact a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* 푸터 */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+/* 버튼 */
+.btn {
+  display: inline-block;
+  /* 기본 스타일... */
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  /* (주의: 현재 CSS 파일에서 .btn의 기본색은 노란색입니다. 아래에서 덮어씁니다.) */
+}
+
+/* ======================== */
+/* 4. Features Section Styling (개선된 Features 섹션 스타일) */
+/* ======================== */
+
+.features {
+    /* 기존 features 스타일을 재정의하여 그리드 레이아웃 적용 */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1:1:1 비율 3열 그리드 */
+    gap: 30px; /* 카드 간 간격 */
+    padding: 60px 5% 80px;
+    background-color: #f8f8f8; /* 배경을 아주 밝은 회색으로 변경 */
+}
+
+/* 개별 카드 스타일 (.feature-card로 변경됨) */
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 은은한 그림자 */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h2 {
+    font-size: 1.4em;
+    color: #0d47a1; /* 네비게이션과 동일한 진한 파란색 */
+    margin-bottom: 20px;
+}
+
+/* 아이콘 스타일 */
+.feature-card i {
+    font-size: 2.5em;
+    color: #ffeb3b; /* 포인트 컬러(노란색) 사용 */
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* 1. 핵심 가치 (태그 스타일) */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #e6f0ff; /* 연한 파란색 배경 */
+    color: #0d47a1;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* 2. 기술 스택 (숙련도 바 스타일) */
+.skill-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.skill-item p {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #1976d2; /* 히어로 섹션과 동일한 밝은 파란색 */
+    height: 100%;
+    transition: width 0.6s ease-in-out;
+    border-radius: 5px;
+}
+
+/* 3. 관심 분야 텍스트 스타일 */
+.interests p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    padding-top: 5px;
+}
+
+/* 모바일 반응형 (화면이 768px 이하일 때) */
+@media (max-width: 768px) {
+    .features {
+        /* 모바일에서는 1열로 변경하여 가독성 확보 */
+        grid-template-columns: 1fr; 
+    }
+}
+/* 코드 추가를 통하여 기술 항목 사이에 간격을 줍니다. */
+.skill-item {
+    margin-bottom: 1.5rem; /* 아래쪽으로 간격 추가 */
+}
+
+/* 프로그레스 바 스타일 (예시, 필요에 따라 추가) */
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #1976d2; /* 파란색으로 진행 상태 표시 */
+    height: 100%;
+    transition: width 0.5s ease;
+}
