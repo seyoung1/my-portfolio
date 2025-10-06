@@ -1,65 +1,152 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>포트폴리오 - 아티클</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 포트폴리오 | 경험 및 기술</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-       <div class="logo">My Portfolio</div> 
-        <ul class="nav-links">
-        <li><a href="index.html">홈</a></li>
-        <li><a href="gallery.html">프로젝트</a></li>
-        <li><a href="article.html">경험/기술</a></li>
-        <li><a href="contact.html">문의</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="01-index.html">홈</a></li>
+                <li><a href="02-gallery.html">프로젝트</a></li>
+                <li><a href="03-article.html" class="active">경험/기술</a></li>
+                <li><a href="04-contact.html">문의</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h1>공부 및 경험 정리</h1>
-    <article>
-      <p>이곳에는 내가 학습한 경험과 정리 내용을 담습니다...</p>
+    <main class="main-content">
+        <article class="long-article section-padding">
+            <h1 class="page-title">개발 경험 및 학습 과정 상세 기록</h1>
 
-      <blockquote>
-        "프로그래밍은 단순히 코드를 작성하는 것이 아니라 문제를 해결하는 과정이다."
-      </blockquote>
+            <section>
+                <h2>1. 클라이언트 개발에 대한 열정</h2>
+                <p>저는 게임 클라이언트 개발에 깊은 관심을 가지고 있으며, 사용자 경험(UX) 최적화와 안정적인 성능 구현에 중점을 두고 학습하고 있습니다. 특히 C++ 기반의 엔진 구조와 Unity 환경에서의 효율적인 리소스 관리 방법을 탐구했습니다.</p>
+                
+                <blockquote cite="https://www.example.com">
+                    "중요한 것은 오직 사용자의 경험뿐이다."
+                    <footer>-Steve Jobs</footer>
+                </blockquote>
+            </section>
 
-      <figure>
-        <img src="assets/images/diagram.png" alt="기술 다이어그램">
-        <figcaption>내가 학습한 구조 다이어그램</figcaption>
-      </figure>
+            <section>
+                <h2>2. 주요 기술 숙련도 비교 (2025년 기준)</h2>
+                
+                <p>
+                    주요 개발 언어인 C++와 Unity/C#에 대해 **6개월간 집중적인 학습**을 진행했습니다. 아래 평가는 5점 만점을 기준으로 **실제 프로젝트 적용 및 문제 해결 능력**을 종합적으로 고려한 주관적인 수치입니다.
+                </p>
 
-      <table>
-        <caption>기술 스택 정리</caption>
-        <thead>
-          <tr>
-            <th scope="col">언어</th>
-            <th scope="col">숙련도</th>
-            <th scope="col">활용 경험</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>C++</td>
-            <td>상</td>
-            <td>게임 클라이언트 구현</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>중</td>
-            <td>AI 모델 실습</td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
-  </main>
+                <table class="data-table">
+                    <caption>주요 개발 언어 및 프레임워크 숙련도 (5점 만점)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">기술</th>
+                            <th scope="col">주요 기여 및 사용 경험</th>
+                            <th scope="col">경험 기간</th>
+                            <th scope="col">숙련도 (5점 기준)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">C++</th>
+                            <td>게임 엔진 구조 분석 및 알고리즘 구현, 메모리 최적화 기법 적용</td>
+                            <td>6개월</td>
+                            <td>3.5점</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Unity/C#</th>
+                            <td>날씨 기반 의상 추천 시스템 프로젝트, 비동기 리소스 로딩 구현</td>
+                            <td>6개월</td>
+                            <td>3.5점</td>
+                        </tr>
+                        <tr class="stripe">
+                            <th scope="row">HTML/CSS/JS</th>
+                            <td>포트폴리오 포함 프론트엔드 웹 개발 전반, 반응형 UI 설계</td>
+                            <td>1년 3개월</td>
+                            <td>4.0점</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-  <footer>
-    <p>© 2025 내 포트폴리오</p>
-  </footer>
+            <section>
+                <h2>3. 클라이언트 코드 예시: 비동기 처리</h2>
+                
+                <figure class="code-figure">
+                    <img src="assets/images/code_sample.jpg" alt="Unity C# 스크립트의 코루틴 비동기 로딩 예시">
+                    <figcaption>Unity 환경에서 자주 사용되는 코루틴(Coroutine)을 이용한 비동기 리소스 로딩 패턴입니다.</figcaption>
+                </figure>
+                
+                <p>Unity의 코루틴을 이용해 **프레임 저하 없이** 대용량 에셋을 로드하는 C# 코드:</p>
+                <pre><code class="language-csharp">
+using UnityEngine;
+using System.Collections;
+
+public class AssetLoader : MonoBehaviour
+{
+    // 코루틴을 사용하여 비동기 로딩 시작
+    public void StartLoading(string assetName)
+    {
+        StartCoroutine(LoadAssetAsync(assetName));
+    }
+
+    // IEnumerator를 반환하여 Unity의 코루틴 시스템과 연동
+    IEnumerator LoadAssetAsync(string assetName)
+    {
+        // 🌟 Resources.LoadAsync는 비동기 로딩 작업을 시작
+        ResourceRequest request = Resources.LoadAsync(assetName);
+
+        // 로딩이 완료될 때까지 기다림 (프레임 단위로 분할하여 실행)
+        while (!request.isDone)
+        {
+            // 다음 프레임까지 대기
+            yield return null; 
+            Debug.Log($"Loading progress: {request.progress * 100}%");
+        }
+
+        // 로딩 완료 후 처리
+        GameObject loadedAsset = request.asset as GameObject;
+        if (loadedAsset != null)
+        {
+            Instantiate(loadedAsset);
+        }
+    }
+}
+                </code></pre>
+                <p>
+                    이 코루틴 패턴은 **대규모 클라이언트 개발**에서 필수적입니다. 로딩 작업을 여러 프레임으로 분산시켜 **메인 스레드를 차단하지 않고** 게임의 프레임 속도(FPS) 저하를 최소화합니다. 이는 사용자에게 끊김 없는 경험을 제공하는 **클라이언트 최적화의 핵심**입니다.
+                </p>
+                
+                <p>C++을 이용한 간단한 메모리 관리 코드:</p>
+                <pre><code class="language-cpp">
+// 스마트 포인터를 사용한 메모리 관리
+#include &lt;memory&gt;
+#include &lt;iostream&gt;
+
+void process_data() {
+    // Unique Pointer를 사용하여 자동 메모리 해제
+    std::unique_ptr&lt;int&gt; data = std::make_unique&lt;int&gt;(100); 
+    
+    if (*data > 50) {
+        std::cout << "Data processed successfully." << std::endl;
+    }
+    // 함수 종료 시 data가 자동으로 해제됨 (RAII)
+}
+                </code></pre>
+                <p>
+                    RAII(Resource Acquisition Is Initialization) 원칙을 따르는 C++의 스마트 포인터 사용은 **안정적인 게임 클라이언트**를 구축하기 위한 필수적인 요소입니다. 수동 메모리 관리에 따른 버그와 메모리 누수를 방지합니다.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 My Portfolio · Designed with HTML5 + CSS3</p>
+    </footer>
 </body>
 </html>
